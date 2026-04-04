@@ -3,33 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Act Fast Support</title>
+    <title>Coding Jones Apps</title>
     <meta
       name="description"
-      content="Support page for the Act Fast party game app."
+      content="Support and privacy pages for apps developed by Coding Jones."
     />
     <style>
       :root {
-        --bg: #fff7ef;
-        --surface: rgba(255, 255, 255, 0.86);
+        --bg: #f7f2ea;
+        --surface: rgba(255, 255, 255, 0.9);
         --surface-strong: #ffffff;
-        --text: #24160d;
-        --muted: #6f5444;
-        --accent: #ef6c1c;
-        --accent-deep: #b74900;
-        --line: rgba(36, 22, 13, 0.1);
-        --shadow: 0 24px 60px rgba(108, 58, 20, 0.12);
+        --text: #1f150f;
+        --muted: #665246;
+        --accent: #d96017;
+        --accent-soft: rgba(217, 96, 23, 0.12);
+        --line: rgba(31, 21, 15, 0.1);
+        --shadow: 0 24px 54px rgba(85, 50, 26, 0.1);
         --radius-lg: 28px;
         --radius-md: 18px;
-        --wrap: 1080px;
+        --wrap: 1100px;
       }
 
       * {
         box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
       }
 
       body {
@@ -37,44 +33,41 @@
         font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
         color: var(--text);
         background:
-          radial-gradient(circle at top left, rgba(239, 108, 28, 0.22), transparent 34%),
-          radial-gradient(circle at right 20%, rgba(255, 202, 149, 0.42), transparent 28%),
-          linear-gradient(180deg, #fffaf4 0%, var(--bg) 100%);
+          radial-gradient(circle at top left, rgba(217, 96, 23, 0.18), transparent 28%),
+          radial-gradient(circle at right, rgba(255, 210, 168, 0.36), transparent 24%),
+          linear-gradient(180deg, #fffdf9 0%, var(--bg) 100%);
       }
 
       a {
-        color: var(--accent-deep);
+        color: inherit;
       }
 
       .page {
         width: min(calc(100% - 32px), var(--wrap));
         margin: 0 auto;
+        padding: 28px 0 44px;
       }
 
       .hero {
-        padding: 32px 0 20px;
-      }
-
-      .hero-card {
         position: relative;
         overflow: hidden;
-        border: 1px solid rgba(255, 255, 255, 0.7);
+        padding: 34px;
         border-radius: var(--radius-lg);
-        padding: 28px;
+        border: 1px solid rgba(255, 255, 255, 0.85);
         background:
-          linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 243, 232, 0.88)),
-          var(--surface);
+          linear-gradient(135deg, rgba(255, 255, 255, 0.97), rgba(255, 245, 236, 0.92));
         box-shadow: var(--shadow);
       }
 
-      .hero-card::after {
+      .hero::after {
         content: "";
         position: absolute;
-        inset: auto -60px -90px auto;
+        right: -60px;
+        bottom: -70px;
         width: 220px;
         height: 220px;
         border-radius: 50%;
-        background: radial-gradient(circle, rgba(239, 108, 28, 0.2), transparent 70%);
+        background: radial-gradient(circle, rgba(217, 96, 23, 0.17), transparent 70%);
       }
 
       .eyebrow {
@@ -82,8 +75,8 @@
         margin-bottom: 14px;
         padding: 8px 12px;
         border-radius: 999px;
-        background: rgba(239, 108, 28, 0.12);
-        color: var(--accent-deep);
+        background: var(--accent-soft);
+        color: var(--accent);
         font-size: 0.78rem;
         font-weight: 700;
         letter-spacing: 0.12em;
@@ -95,34 +88,73 @@
         margin: 0;
         font-family: Georgia, "Times New Roman", serif;
         font-weight: 700;
-        line-height: 1.04;
       }
 
       h1 {
-        max-width: 10ch;
-        font-size: clamp(2.6rem, 6vw, 5rem);
+        max-width: 12ch;
+        font-size: clamp(2.7rem, 6vw, 5.2rem);
+        line-height: 1.02;
       }
 
       .lead {
-        max-width: 62ch;
+        max-width: 64ch;
         margin: 18px 0 0;
-        font-size: 1.06rem;
-        line-height: 1.75;
         color: var(--muted);
+        line-height: 1.8;
+        font-size: 1.05rem;
       }
 
-      .hero-links {
+      .apps {
+        display: grid;
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .app-card {
+        display: grid;
+        gap: 18px;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: var(--surface-strong);
+        box-shadow: 0 10px 26px rgba(63, 37, 19, 0.06);
+      }
+
+      .app-mark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 58px;
+        height: 58px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #ff9f57, #d96017);
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.1rem;
+      }
+
+      .app-copy h2 {
+        font-size: 1.8rem;
+        line-height: 1.1;
+      }
+
+      .app-copy p {
+        margin: 10px 0 0;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      .actions {
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
-        margin-top: 28px;
       }
 
       .button {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        min-height: 48px;
+        min-height: 46px;
         padding: 0 18px;
         border-radius: 999px;
         border: 1px solid transparent;
@@ -136,107 +168,52 @@
       }
 
       .button-secondary {
-        border-color: rgba(36, 22, 13, 0.12);
-        background: rgba(255, 255, 255, 0.72);
+        border-color: var(--line);
+        background: #fffaf6;
         color: var(--text);
       }
 
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 18px;
-        padding: 12px 0 40px;
-      }
-
-      .panel {
-        grid-column: span 12;
-        padding: 24px;
-        border: 1px solid var(--line);
-        border-radius: var(--radius-md);
-        background: var(--surface-strong);
-        box-shadow: 0 10px 30px rgba(73, 42, 20, 0.06);
-      }
-
-      .panel h2 {
-        margin-bottom: 14px;
-        font-size: 1.8rem;
-      }
-
-      .panel p,
-      .panel li {
-        margin: 0;
+      .note {
+        margin-top: 20px;
+        padding: 18px 20px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px dashed rgba(31, 21, 15, 0.14);
         color: var(--muted);
         line-height: 1.75;
       }
 
-      .panel p + p,
-      .panel ul,
-      .panel ol {
-        margin-top: 14px;
-      }
-
-      .panel ul,
-      .panel ol {
-        padding-left: 20px;
-      }
-
-      .faq {
-        display: grid;
-        gap: 14px;
-        margin-top: 16px;
-      }
-
-      .faq-item {
-        padding: 18px;
-        border-radius: 16px;
-        background: #fff7f0;
-        border: 1px solid rgba(239, 108, 28, 0.14);
-      }
-
-      .faq-item strong {
-        display: block;
-        margin-bottom: 6px;
-        color: var(--text);
-      }
-
       footer {
-        padding: 0 0 44px;
+        margin-top: 18px;
         color: var(--muted);
-        font-size: 0.95rem;
       }
 
       @media (min-width: 820px) {
-        .panel-wide {
-          grid-column: span 7;
-        }
-
-        .panel-side {
-          grid-column: span 5;
-        }
-
-        .hero-card {
-          padding: 42px;
+        .app-card {
+          grid-template-columns: auto 1fr auto;
+          align-items: center;
         }
       }
 
       @media (prefers-reduced-motion: no-preference) {
-        .hero-card,
-        .panel {
-          animation: rise 600ms ease both;
+        .hero,
+        .app-card,
+        .note {
+          animation: float-up 560ms ease both;
         }
 
-        .panel:nth-child(2) {
+        .app-card {
           animation-delay: 120ms;
         }
 
-        .panel:nth-child(3) {
-          animation-delay: 200ms;
+        .note {
+          animation-delay: 220ms;
         }
 
-        @keyframes rise {
+        @keyframes float-up {
           from {
             opacity: 0;
-            transform: translateY(18px);
+            transform: translateY(16px);
           }
 
           to {
@@ -250,90 +227,37 @@
   <body>
     <main class="page">
       <section class="hero">
-        <div class="hero-card">
-          <span class="eyebrow">App Store Support</span>
-          <h1>Act Fast support</h1>
-          <p class="lead">
-            Act Fast is a local party game for charades-style rounds with teams,
-            words, sound, and quick handoffs. If something is unclear or not
-            working as expected, this page is the public support contact for the
-            app.
-          </p>
-          <div class="hero-links">
-            <a class="button button-primary" href="mailto:coding98jones@gmail.com"
-              >Email Support</a
-            >
-            <a class="button button-secondary" href="/privacy_actfast.html"
-              >Privacy Policy</a
-            >
-          </div>
-        </div>
+        <span class="eyebrow">App Pages</span>
+        <h1>Support and privacy pages for published apps</h1>
+        <p class="lead">
+          This site hosts public support and privacy pages for apps developed by
+          Coding Jones. Additional app pages can be added here over time as new
+          projects are released.
+        </p>
       </section>
 
-      <section class="grid" aria-label="Support details">
-        <article class="panel panel-wide">
-          <h2>How to get help</h2>
-          <p>
-            For support, contact
-            <a href="mailto:coding98jones@gmail.com">coding98jones@gmail.com</a>.
-          </p>
-          <p>
-            To make troubleshooting faster, include your device model, iOS
-            version, app version, and a short description of what happened.
-          </p>
-          <ol>
-            <li>Explain the issue in one or two sentences.</li>
-            <li>List the steps that led to it.</li>
-            <li>Say whether sound, vibration, or language settings were changed.</li>
-          </ol>
-        </article>
-
-        <aside class="panel panel-side">
-          <h2>Quick facts</h2>
-          <ul>
-            <li>No account is required to play.</li>
-            <li>The game is designed to work locally on the device.</li>
-            <li>The privacy policy for the app is available below.</li>
-          </ul>
-        </aside>
-
-        <article class="panel panel-wide">
-          <h2>Common questions</h2>
-          <div class="faq">
-            <div class="faq-item">
-              <strong>Does Act Fast need an internet connection?</strong>
-              <span>
-                The gameplay is designed to run locally on the device. If you
-                are reviewing the support or privacy pages online, that of
-                course uses your browser connection.
-              </span>
-            </div>
-            <div class="faq-item">
-              <strong>Why are sound or vibration not working?</strong>
-              <span>
-                Check the in-app settings first. Also verify that your device is
-                not muted and that vibration is enabled at the system level.
-              </span>
-            </div>
-            <div class="faq-item">
-              <strong>Do I need to sign in or create a profile?</strong>
-              <span>
-                No. Act Fast does not require user accounts for normal use.
-              </span>
-            </div>
+      <section class="apps" aria-label="Apps">
+        <article class="app-card">
+          <div class="app-mark" aria-hidden="true">AF</div>
+          <div class="app-copy">
+            <h2>Act Fast</h2>
+            <p>
+              Local party game support page, contact details, and privacy policy
+              for App Store submission and public reference.
+            </p>
+          </div>
+          <div class="actions">
+            <a class="button button-primary" href="/actfast.html">Support</a>
+            <a class="button button-secondary" href="/privacy_actfast.html"
+              >Privacy</a
+            >
           </div>
         </article>
+      </section>
 
-        <article class="panel panel-side">
-          <h2>Privacy</h2>
-          <p>
-            Act Fast does not use accounts, advertising SDKs, or tracking. The
-            app's privacy details are published here:
-          </p>
-          <p>
-            <a href="/privacy_actfast.html">View the Act Fast Privacy Policy</a>
-          </p>
-        </article>
+      <section class="note">
+        Support contact for current apps:
+        <a href="mailto:coding98jones@gmail.com">coding98jones@gmail.com</a>
       </section>
 
       <footer>
