@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blend or Bust Privacy Policy</title>
+    <meta
+      name="description"
+      content="Privacy Policy for the Blend or Bust mobile app."
+    />
+    <style>
+      :root {
+        --bg: #fbf6ef;
+        --surface: rgba(255, 255, 255, 0.9);
+        --text: #221710;
+        --muted: #5d4a3f;
+        --accent: #d45b12;
+        --line: rgba(34, 23, 16, 0.1);
+        --shadow: 0 22px 54px rgba(86, 53, 26, 0.1);
+        --radius-lg: 26px;
+        --radius-md: 18px;
+        --wrap: 980px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top right, rgba(212, 91, 18, 0.16), transparent 26%),
+          linear-gradient(180deg, #fffdf9 0%, var(--bg) 100%);
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .page {
+        width: min(calc(100% - 32px), var(--wrap));
+        margin: 0 auto;
+        padding: 28px 0 44px;
+      }
+
+      .top {
+        padding: 30px;
+        border-radius: var(--radius-lg);
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(255, 244, 236, 0.92));
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        box-shadow: var(--shadow);
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 14px;
+        padding: 7px 11px;
+        border-radius: 999px;
+        background: rgba(212, 91, 18, 0.1);
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 700;
+      }
+
+      h1 {
+        font-size: clamp(2.4rem, 5vw, 4.3rem);
+        line-height: 1.05;
+      }
+
+      h2 {
+        font-size: 1.55rem;
+        margin-bottom: 12px;
+      }
+
+      .intro {
+        margin-top: 16px;
+        color: var(--muted);
+        line-height: 1.8;
+        max-width: 68ch;
+      }
+
+      .sections {
+        display: grid;
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      .card {
+        padding: 24px;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--line);
+        background: var(--surface);
+        box-shadow: 0 10px 24px rgba(64, 38, 19, 0.05);
+      }
+
+      .card p,
+      .card li {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.78;
+      }
+
+      .card p + p,
+      .card ul {
+        margin-top: 14px;
+      }
+
+      .card ul {
+        padding-left: 20px;
+      }
+
+      .note {
+        padding: 16px 18px;
+        border-left: 4px solid var(--accent);
+        border-radius: 14px;
+        background: #fff4ea;
+      }
+
+      .footer {
+        margin-top: 18px;
+        color: var(--muted);
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .top,
+        .card {
+          animation: fade-up 560ms ease both;
+        }
+
+        .card:nth-child(2) {
+          animation-delay: 110ms;
+        }
+
+        .card:nth-child(3) {
+          animation-delay: 180ms;
+        }
+
+        .card:nth-child(4) {
+          animation-delay: 250ms;
+        }
+
+        @keyframes fade-up {
+          from {
+            opacity: 0;
+            transform: translateY(14px);
+          }
+
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="top">
+        <span class="eyebrow">Privacy Policy</span>
+        <h1>Blend or Bust Privacy Policy</h1>
+        <p class="intro">
+          This Privacy Policy applies to the Blend or Bust mobile app. Based on
+          the current app implementation, Blend or Bust is designed as a local
+          party game and does not collect, sell, or share personal data for
+          advertising or tracking purposes.
+        </p>
+      </section>
+
+      <section class="sections" aria-label="Privacy details">
+        <article class="card">
+          <h2>What Blend or Bust does not collect</h2>
+          <ul>
+            <li>No user accounts or profiles are required.</li>
+            <li>No analytics, advertising SDKs, or tracking technologies are used.</li>
+            <li>No gameplay data is sent to a backend server operated for the app.</li>
+            <li>No in-app purchases, subscriptions, or marketing databases are used.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Data used locally on your device</h2>
+          <p>
+            Based on the current app code, Blend or Bust stores a small amount
+            of data locally on the device so the app can work as expected. This
+            includes:
+          </p>
+          <ul>
+            <li>selected language</li>
+            <li>sound on or off</li>
+            <li>vibration on or off</li>
+            <li>whether the info screen has already been shown</li>
+            <li>custom deck names and custom deck word lists you choose to save</li>
+          </ul>
+          <p>
+            Player names and active round information are handled in app memory
+            for the current session. Based on the current implementation, that
+            session data is not written to the app's persistent local storage.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Support email</h2>
+          <p>
+            If you contact support at
+            <a href="mailto:coding98jones@gmail.com">coding98jones@gmail.com</a>,
+            your email address and any information you include in your message
+            will be used only to respond to your request and manage support.
+          </p>
+          <p class="note">
+            Email is handled by your email provider and the recipient's email
+            provider, outside the app itself.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Your choices</h2>
+          <p>
+            You can delete saved custom decks from within the app. You can also
+            stop using the app at any time. Because app data is stored locally
+            on your device, removing the app from the device will generally
+            remove that locally stored app data as part of the app removal
+            process.
+          </p>
+          <p>
+            For privacy questions, contact
+            <a href="mailto:coding98jones@gmail.com">coding98jones@gmail.com</a>.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Changes to this policy</h2>
+          <p>
+            If Blend or Bust changes how it handles data in a future version,
+            this Privacy Policy should be updated before or at the time the new
+            data practice is introduced.
+          </p>
+        </article>
+      </section>
+
+      <p class="footer">
+        Last updated: April 14, 2026. Return to the
+        <a href="/blendorbust.html">Blend or Bust support page</a>.
+      </p>
+    </main>
+  </body>
+</html>
