@@ -173,8 +173,9 @@
         <p class="intro">
           This Privacy Policy applies to the KeepTrack: Musical Journey mobile
           app. Based on the current app implementation, KeepTrack: Musical
-          Journey is designed as a private on-device music lesson journal and does not collect, sell, or share
-          personal data for advertising or tracking purposes.
+          Journey is designed as a private local-first music lesson journal. The
+          app does not collect, sell, or share personal data for advertising or
+          tracking purposes.
         </p>
       </section>
 
@@ -185,22 +186,24 @@
             <li>No user accounts or profiles are required.</li>
             <li>No analytics, advertising SDKs, or tracking technologies are used.</li>
             <li>No music lesson journal data is sent to a backend server operated for the app.</li>
-            <li>No in-app purchases, subscriptions, or marketing databases are used.</li>
-            <li>No cloud sync is built into the current implementation.</li>
+            <li>No marketing databases are used.</li>
+            <li>No public or shared CloudKit databases are used.</li>
+            <li>No remote AI service processes journal content.</li>
           </ul>
         </article>
 
         <article class="card">
           <h2>Data used locally on your device</h2>
           <p>
-            Based on the current app code, KeepTrack: Musical Journey stores music lesson journal data
-            locally on your device so the app can work as expected. This may
-            include:
+            Based on the current app code, KeepTrack: Musical Journey stores
+            music lesson journal data locally on your device first so the app
+            can work as expected. This may include:
           </p>
           <ul>
-            <li>book titles, standalone titles, current pages, and title statuses</li>
+            <li>book titles, standalone titles, Wishlist entries, current pages, and title statuses</li>
             <li>practice notes, lesson notes, focus areas, wins, next steps, and assignments</li>
             <li>teacher feedback you choose to save in lesson notes</li>
+            <li>practice sessions, metronome settings, practice totals, and manual day adjustments</li>
             <li>archive state and restore/delete history needed by the app</li>
             <li>the app appearance preference</li>
           </ul>
@@ -208,6 +211,21 @@
             Local journal data is stored with Apple's SwiftData framework. The
             app configures its application support directory with complete file
             protection where supported by the operating system.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Private iCloud sync</h2>
+          <p>
+            When iCloud is available, supported journal records can sync through
+            the private CloudKit database attached to your own Apple iCloud
+            account. This sync is for your devices and does not use a public
+            database, shared database, teacher collaboration account, or
+            developer-operated journal backend.
+          </p>
+          <p class="note">
+            If iCloud is signed out, restricted, unavailable, or full, the app
+            remains usable locally and shows sync availability status.
           </p>
         </article>
 
@@ -221,6 +239,20 @@
           <p class="note">
             Only the structured fields you choose to save become part of your
             local music lesson journal.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Premium purchases</h2>
+          <p>
+            KeepTrack Premium is offered through Apple's StoreKit purchase
+            system. Monthly, yearly, and lifetime products may appear in the
+            app depending on App Store availability and eligibility. Apple
+            processes purchase and subscription transactions.
+          </p>
+          <p>
+            The app uses purchase entitlement status only to unlock premium
+            features such as unlimited library items and Practice Mode.
           </p>
         </article>
 
@@ -255,9 +287,11 @@
           <h2>Your choices</h2>
           <p>
             You can archive and delete music lesson journal material within the app.
-            Because app data is stored locally on your device, removing the app
-            from the device will generally remove locally stored app data as
-            part of app removal.
+            Because app data is stored locally first and can sync through your
+            private iCloud account when available, removing the app from one
+            device generally removes locally stored app data from that device;
+            iCloud-synced copies may still be present on your other signed-in
+            devices until removed through the app or iCloud data management.
           </p>
           <p>
             For privacy questions, contact
@@ -276,7 +310,7 @@
       </section>
 
       <p class="footer">
-        Last updated: May 13, 2026. Return to the
+        Last updated: July 4, 2026. Return to the
         <a href="/keeptrack-musical-journey.html">KeepTrack: Musical Journey support page</a>.
       </p>
     </main>
