@@ -205,7 +205,7 @@
             <li>teacher feedback you choose to save in lesson notes</li>
             <li>practice sessions, metronome settings, practice totals, and manual day adjustments</li>
             <li>archive state and restore/delete history needed by the app</li>
-            <li>audio recordings you make of your own practice, and the names you give them</li>
+            <li>audio recordings you make of your own practice, and the names you give them (kept on that device only)</li>
             <li>sheet music PDF files you choose to attach to a piece</li>
             <li>sight-reading round results used to draw your progress graph</li>
             <li>instrument profiles and the repertoire, history, and reports scoped to each</li>
@@ -244,17 +244,17 @@
           </p>
           <p>
             Recordings are written to a protected store inside the app's own
-            container on your device. They sync only through the private
-            CloudKit database attached to your own iCloud account, so they can
-            appear on your other signed-in devices. Recordings are never sent to
-            a server operated for this app, never shared with a public or shared
-            CloudKit database, are not used for analytics or advertising, and are
-            not processed by any AI service, on device or remote.
+            container and stay on the device that made them. They are not
+            uploaded to iCloud in this version, so they do not appear on your
+            other devices. Recordings are never sent to a server operated for
+            this app, never shared with any CloudKit database, are not used for
+            analytics or advertising, and are not processed by any AI service,
+            on device or remote.
           </p>
           <p class="note">
             You can rename or delete any recording in the app. Deleting a
-            recording removes it from your device and marks it for removal from
-            your other devices through your own iCloud account.
+            recording removes it from your device permanently, because it is the
+            only copy.
           </p>
         </article>
 
@@ -354,7 +354,7 @@
       </section>
 
       <p class="footer">
-        Last updated: September 7, 2026. Return to the
+        Last updated: September 8, 2026. Return to the
         <a href="/keeptrack-musical-journey.html">KeepTrack: Musical Journey support page</a>.
       </p>
     </main>
